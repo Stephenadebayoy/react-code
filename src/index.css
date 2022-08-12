@@ -1,5 +1,8 @@
 body {
-  margin: 0;
+  margin: 0 3rem;
+  padding: 0;
+  box-sizing: border-box;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +13,62 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container {
+  width: 90%;
+  color: white;
+  padding: 2rem 4rem;
+  background: black;
+}
+.logo {
+  width: 7%;
+  margin-left: 3rem;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #21222a;
+}
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+.nav-items > li {
+  padding: 3rem;
+  font-weight: 700;
+}
+
+.nav > h3 {
+  margin-right: auto; /* the auto aloneit will take the h3 back to the normal inline block */
+  color: #61dafb;
+  padding-left: 1rem;
+}
+.main {
+  color: snow;
+  background-image: url(../src/asset/logo2.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 75%;
+}
+footer {
+  text-align: center;
+  padding-top: 3rem;
+  color: #61dafb;
+  font-weight: 700;
+}
+.main > h1 {
+  font-size: 3rem;
+  letter-spacing: -0.05em;
+}
+
+.main--text > li {
+  padding-block: 1rem;
+}
+.main--text {
+  max-width: 350px; /* it will makes the text to rap up to the next line just like the last text mobile app */
+}
+.main--text > li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
 }
